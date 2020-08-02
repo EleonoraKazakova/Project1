@@ -1,0 +1,26 @@
+.background-container{
+    background-color: rgb(202, 188, 159);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.preview-container{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+
+    /*flex-wrap: wrap;*/
+}
+
+.selected{
+    border: 1px solid rgb(41, 17, 1);
+}
+
+.preview {
+    padding: 2px;;
+    width: 171px;
+    cursor: pointer;
+}

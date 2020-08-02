@@ -1,0 +1,19 @@
+.photo{
+    width: 700px;
+}
+
+.photo-hidden{
+    display: none;
+}
+
+.arrow {
+    width: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

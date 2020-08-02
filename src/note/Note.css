@@ -1,0 +1,16 @@
+.note{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+.item{
+    background-color: rgb(128, 82, 238);
+    width: 30%;
+}
+
+.text{
+    background-color: rgba(213, 216, 184, 0.705);
+    width: 70%;
+}
