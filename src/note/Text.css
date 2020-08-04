@@ -1,4 +1,7 @@
 .Text-text{
     text-align: justify;
     padding: 10px;
+    resize: none;
+    width: 90%;
+    height: 70%;
 }

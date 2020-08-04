@@ -3,10 +3,10 @@ import './Text.css'
 
 function Text(props) {
     return (
-        <div>
+        <>
             <h3>{props.title}</h3>
-            <p className='Text-text'>{props.text}</p>
-        </div>
+            <textarea className='Text-text' value={props.text} onChange={(event) => props.saveText(event.target.value)}/>
+        </>
     )
 }
 
