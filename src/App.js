@@ -25,6 +25,7 @@ import photoRome3 from './photo/photoRome/IMG_3251.JPG'
 import photoRome4 from './photo/photoRome/IMG_3739.JPG'
 
 import Note from './note/Note'
+import Post from './PostComments/Post'
 
 const cities = {
   'Moscow': [photoMoscow1, photoMoscow2, photoMoscow3, photoMoscow4],
@@ -38,46 +39,54 @@ function App() {
     <Router>
       <div className="App">
         <Menu />
-        <Switch>
-          <Route path='/gallery/:country/:city'
-            render={(props) =>
-              <div>
-                <Gallery
-                  photos={cities[props.match.params.city]}
+        <div className='App-body'>
+          <Switch>
+            <Route path='/gallery/:country/:city'
+              render={(props) =>
+                <div>
+                  <Gallery
+                    photos={cities[props.match.params.city]}
+                  />
+                </div>
+              }
+            />
+
+            <Route path='/note/:item'
+              render={(props) =>
+                <Note
+                  item={props.match.params.item}
                 />
-              </div>
-            }
-          />
-          
-          <Route path='/note/:item'
-            render={(props) =>
-              <Note 
-                item={props.match.params.item}
-              />
-            }
-          />
+              }
+            />
 
-          <Route path='/'>
-            <Gallery photos={[photo1, photo2, photo3, photo4]} />
-            <header className="App-header">
+            <Route path='/posts'
+              render={() =>
+                <Post />
+              }
+            />
 
-              <p>
-                Edit <code>src/App.js</code> and save to reload.
+            <Route path='/'>
+              <Gallery photos={[photo1, photo2, photo3, photo4]} />
+              <header className="App-header">
+
+                <p>
+                  Edit <code>src/App.js</code> and save to reload.
                 </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
+                <a
+                  className="App-link"
+                  href="https://reactjs.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Learn React
         </a>
-            </header>
-            <div className='background'>
-              <p>TEST</p>
-            </div>
-          </Route>
-        </Switch>
+              </header>
+              <div className='background'>
+                <p>TEST</p>
+              </div>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

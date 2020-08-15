@@ -1,0 +1,35 @@
+.Comments-h5 {
+    text-align: left;
+    font-weight: bold;
+}
+
+.Comments-name {
+    text-align: left;
+    font-style: italic;
+}
+
+.Comments-content {
+    background-color: rgb(230, 237, 240);
+    
+}
+
+.Comments-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: small;
+    margin-top: 10px;
+    
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0 0;
+    padding: 0;
+}
+
+h3 {
+    padding-top: 10px;
+}

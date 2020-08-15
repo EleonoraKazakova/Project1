@@ -23,9 +23,9 @@ function Menu() {
       Menu
     </div>
     {showNav ? <nav className='Menu-nav' ref={ menuRef }>
-      <Link to='/'>Home</Link>
-      <Link to='/gallery/Russia/Moscow'>Moscow</Link>
-      <Link to='/note/1'>Note</Link>
+      <Link className='Menu-link' to='/'>Home</Link>
+      <Link className='Menu-link' to='/gallery/Russia/Moscow'>Moscow</Link>
+      <Link className='Menu-link' to='/note/1'>Note</Link>
     </nav> : null
     }
 

@@ -49,7 +49,7 @@
 }
 
 .Menu-menu{
-    position: fixed;
+    
     width: 100px;
     background-color: rgb(95, 13, 13);
     display: flex;
@@ -65,12 +65,17 @@
 .Menu-nav {
     height: 100%;
     position: fixed;
-    width: 100px;
-    background-color: rgba(165, 143, 100, 0.534);
+    width: 150px;
+    background-color: rgb(109, 30, 30);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 25px;
     padding-top: 30px;
     font-size: 16px;
+    color: aliceblue;
+  }
+
+  .Menu-link {
+    color: aliceblue;
   }

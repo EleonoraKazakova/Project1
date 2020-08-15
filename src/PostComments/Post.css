@@ -1,0 +1,29 @@
+.post-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    height: 100%;
+    
+}
+
+.post-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(231, 208, 182);
+    overflow-y: auto;
+    cursor: pointer;
+    padding: 7px;
+
+}
+
+.post-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow-y: auto;
+    font-size: 15px;
+
+}
+
+.Post-p {
+    background-color: rgb(222, 181, 135);
+}
