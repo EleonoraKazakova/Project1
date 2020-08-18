@@ -14,7 +14,8 @@ function Comments(props) {
     }, [])
 
     return (
-        <div className='Comments-content'><h3>Comments </h3>
+        <div className='Comments-content'>
+            <h3>Comments </h3>
             {comments.map(comment => <div className='Comments-text'> <div className='Comments-h5'>name</div><div className='Comments-name'>{comment.name}</div><p>{comment.body}</p><hr/></div>)}
         
         </div>

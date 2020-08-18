@@ -1,0 +1,5 @@
+.AnimateText:hover{
+    animation: bounce; 
+    animation-duration: 2s;
+  } 
+

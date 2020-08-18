@@ -27,6 +27,9 @@ import photoRome4 from './photo/photoRome/IMG_3739.JPG'
 import Note from './note/Note'
 import Post from './PostComments/Post'
 
+import animate from 'animate.css'
+import AnimateText from './AnimateText'
+
 const cities = {
   'Moscow': [photoMoscow1, photoMoscow2, photoMoscow3, photoMoscow4],
   'Samara': [photoSamara1, photoSamara2, photoSamara3, photoSamara4],
@@ -69,20 +72,11 @@ function App() {
               <Gallery photos={[photo1, photo2, photo3, photo4]} />
               <header className="App-header">
 
-                <p>
-                  Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn React
-        </a>
+                <AnimateText />
+                
               </header>
               <div className='background'>
-                <p>TEST</p>
+                
               </div>
             </Route>
           </Switch>
